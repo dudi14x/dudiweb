@@ -7,3 +7,5 @@
     if (href === path) a.classList.add("active");
   });
 })();
+// Placeholder for animations or future logic
+console.log("Portfolio loaded");
