@@ -1,0 +1,219 @@
+/* ---------- Reset ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Helvetica Neue", Helvetica;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #ffffff;
+  color: #111;
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: #111;
+  color: #fff;
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.page {
+  padding: 140px 0 90px; /* space for fixed nav */
+}
+
+.small {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 26px 0;
+}
+
+/* ---------- Nav ---------- */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eee;
+  z-index: 100;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.brand {
+  font-weight: 650;
+  letter-spacing: 0.2px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 22px;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: #444;
+  padding: 8px 10px;
+  border-radius: 10px;
+}
+
+.nav-links a:hover {
+  background: #f2f2f2;
+  color: #111;
+}
+
+.nav-links a.active {
+  background: #111;
+  color: #fff;
+}
+
+/* ---------- Typography ---------- */
+h1 {
+  font-size: 2.7rem;
+  letter-spacing: -0.7px;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 34px 0 10px;
+  letter-spacing: -0.2px;
+}
+
+p {
+  color: #555;
+  margin-top: 12px;
+}
+
+.lead {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 14px;
+  max-width: 62ch;
+}
+
+/* ---------- Components ---------- */
+.kicker {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 8px 12px;
+  border: 1px solid #eee;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  color: #444;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 26px;
+  margin-top: 18px;
+}
+
+.card {
+  border: 1px solid #eee;
+  border-radius: 16px;
+  padding: 18px 18px;
+  background: #fff;
+}
+
+.list {
+  margin-top: 10px;
+}
+
+.list-item {
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.badge {
+  border: 1px solid #eee;
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 0.92rem;
+  color: #444;
+}
+
+/* ---------- Buttons / Links ---------- */
+.btn-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  background: #fff;
+  font-size: 0.95rem;
+}
+
+.btn.primary {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  transition: transform 120ms ease;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  border-top: 1px solid #eee;
+  padding: 26px 0 40px;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 860px) {
+  .container { padding: 0 26px; }
+  h1 { font-size: 2.2rem; }
+  .grid-2 { grid-template-columns: 1fr; }
+  .nav-inner { height: auto; padding: 12px 0; flex-direction: column; gap: 10px; }
+}
