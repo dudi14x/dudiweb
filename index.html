@@ -59,17 +59,14 @@
 
     <div class="about-text">
       <h2>About</h2>
-
       <p>
         I am a Computer Science student with a strong interest in artificial intelligence,
         data-driven systems, and entrepreneurship.
       </p>
-
       <p>
         I served as Head of the Sports Committee at the Omani Students Society in Cardiff,
         leading initiatives that promote leadership, teamwork, and community engagement.
       </p>
-
       <p>
         I am also a crypto enthusiast exploring blockchain technologies and decentralized systems.
         I was awarded <strong>Icons Oman 2025</strong> for being a
@@ -117,13 +114,6 @@
         <span>2025</span>
       </div>
 
-      <div class="achievement-card">
-        <h3>Oman Data Park (ODP)</h3>
-        <p>Certification of Completion</p>
-        <span>2025</span>
-      </div>
-
-      <!-- CENTERED LAST ROW -->
       <div class="achievement-card highlight">
         <h3>ORKI AI</h3>
         <p>Certification of Completion</p>
@@ -144,8 +134,12 @@
 <section id="resume" class="section center">
   <div class="container narrow">
     <h2>Resume</h2>
-    <p class="muted">Download my resume for full academic and professional details.</p>
-    <a href="assets/resume.pdf" class="btn primary" download>Download Resume</a>
+    <p class="muted">
+      Download my resume for full academic and professional details.
+    </p>
+    <a href="assets/resume.pdf" class="btn primary" download>
+      Download Resume
+    </a>
   </div>
 </section>
 
@@ -154,20 +148,18 @@
   <div class="container narrow">
     <h2>Contact</h2>
 
-    <div class="contact-card">
-      <p>📍 Oman</p>
-      <p>
-        📧 <a href="mailto:muayadabduwani@gmail.com">
-          muayadabduwani@gmail.com
-        </a>
-      </p>
-      <p>
-        🔗 <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
-              target="_blank">
-          LinkedIn Profile
-        </a>
-      </p>
-    </div>
+    <form class="contact-form"
+          action="https://formsubmit.co/muayadabduwani@gmail.com"
+          method="POST">
+
+      <input type="hidden" name="_captcha" value="false">
+
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
   </div>
 </section>
 
