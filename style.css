@@ -324,4 +324,13 @@ footer{
   content:"";
   grid-column:1 / -1;
 }
+.profile{
+  width: 220px;          /* adjust size if you want */
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 15%;  /* move photo DOWN inside circle (more face visible) */
+  display: block;
+}
+
 
