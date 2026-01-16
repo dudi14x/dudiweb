@@ -175,3 +175,27 @@ footer{
   .achievements-grid{grid-template-columns:1fr}
   .contact-form .row{grid-template-columns:1fr}
 }
+.contact-form input:focus,
+.contact-form textarea:focus{
+  transform:translateY(-2px);
+}
+
+.contact-form button:active{
+  transform:scale(.97);
+}
+
+.contact-form::after{
+  content:"";
+  position:absolute;
+  inset:-1px;
+  border-radius:20px;
+  background:linear-gradient(90deg, transparent, rgba(167,139,250,.4), transparent);
+  opacity:0;
+  transition:.3s;
+  pointer-events:none;
+}
+
+.contact-form:hover::after{
+  opacity:1;
+}
+
