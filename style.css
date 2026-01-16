@@ -226,3 +226,4 @@ footer {
 @media (max-width:600px) {
   .achievements-grid { grid-template-columns:1fr; }
 }
+
