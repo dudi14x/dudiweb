@@ -140,8 +140,10 @@ a:hover{text-decoration:underline}
   height:220px;
   border-radius:50%;
   object-fit:cover;
+  object-position: center 8%;   /* 🔥 THIS fixes the high spacing */
   border:3px solid rgba(167,139,250,.5);
   box-shadow:0 0 45px rgba(167,139,250,.6);
+  display:block;
 }
 
 /* ACHIEVEMENTS */
@@ -319,18 +321,6 @@ footer{
   font-weight:600;
 }
 
-/* CENTER LAST ROW */
-.achievements-grid::after{
-  content:"";
-  grid-column:1 / -1;
-}
-.profile{
-  width: 220px;          /* adjust size if you want */
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center 15%;  /* move photo DOWN inside circle (more face visible) */
-  display: block;
-}
+
 
 
