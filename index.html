@@ -1,174 +1,249 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Muayad Al Abduwani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="logo">Muayad Al Abduwani <span>• Entrepreneur</span></div>
 
-<nav>
-  <div class="nav-inner">
-    <div class="logo">Muayad Al Abduwani <span>• Entrepreneur</span></div>
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#resume">Resume</a></li>
-      <li>
-        <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
-           target="_blank" rel="noopener">LinkedIn</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <a class="nav-link"
+             href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+    <div class="nav-glow"></div>
+  </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="container center">
-    <h1><span>Build.</span> Evolve.</h1>
-    <p class="subtitle">Start now — let’s connect and grow.</p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container center">
+      <h1 class="hero-title"><span>Build.</span> Evolve.</h1>
+      <p class="subtitle">Start now — let’s connect and grow.</p>
 
-    <div class="buttons">
-      <a href="assets/resume.pdf" class="btn primary" download>View Resume</a>
-      <a href="#contact" class="btn outline">Contact Me</a>
+      <div class="buttons">
+        <!-- IMPORTANT: PDF ONLY. No resume.html/htm anywhere -->
+        <a href="assets/resume.pdf" class="btn primary ripple" download>View Resume</a>
+        <a href="#contact" class="btn outline ripple">Contact Me</a>
+      </div>
+
+      <div class="tags">
+        <span>Data Science</span>
+        <span>AI Engineer</span>
+        <span>AI Developer</span>
+        <span>Power BI</span>
+        <span>Canva</span>
+        <span>Machine Learning</span>
+        <span>Python</span>
+        <span>SQL</span>
+      </div>
     </div>
 
-    <div class="tags">
-      <span>Data Science</span>
-      <span>AI Engineer</span>
-      <span>AI Developer</span>
-      <span>Power BI</span>
-      <span>Canva</span>
-      <span>Machine Learning</span>
-      <span>Python</span>
-      <span>SQL</span>
+    <div class="hero-orbit" aria-hidden="true"></div>
+    <div class="hero-dots" aria-hidden="true"></div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container narrow about-layout">
+      <div class="about-image">
+        <img src="assets/profile.jpg" alt="Muayad Al Abduwani" />
+      </div>
+
+      <div class="about-text">
+        <h2 class="section-title">About</h2>
+
+        <p>
+          I am a Computer Science student with a strong interest in artificial intelligence,
+          data-driven systems, and entrepreneurship.
+        </p>
+
+        <p>
+          I served as Head of the Sports Committee at the Omani Students Society in Cardiff,
+          leading initiatives that promote leadership, teamwork, and community engagement.
+        </p>
+
+        <p>
+          I am also a crypto enthusiast exploring blockchain technologies and decentralized systems.
+          I was awarded <strong>Icons Oman 2025</strong> for being a
+          <strong>Digital Content Creator</strong>.
+        </p>
+
+        <div class="about-badges">
+          <span class="badge">🎓 Computer Science</span>
+          <span class="badge">🏆 Icons Oman 2025</span>
+          <span class="badge">🪙 Crypto</span>
+          <span class="badge">🤖 AI</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container narrow about-layout">
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section">
+    <div class="container">
+      <h2 class="section-title center">Achievements & Certifications</h2>
 
-    <div class="about-image">
-      <img src="assets/profile.jpg" alt="Muayad Al Abduwani">
+      <div class="achievements-grid">
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">🎓</div>
+            <div class="ach-meta">
+              <h3>IGCSE</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2019 – 2021</div>
+        </article>
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">📘</div>
+            <div class="ach-meta">
+              <h3>IB Diploma</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2021 – 2023</div>
+        </article>
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">📝</div>
+            <div class="ach-meta">
+              <h3>IELTS</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2023</div>
+        </article>
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">📡</div>
+            <div class="ach-meta">
+              <h3>Omantel</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2024</div>
+        </article>
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">🏢</div>
+            <div class="ach-meta">
+              <h3>Oman Data Park (ODP)</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2025</div>
+        </article>
+
+        <article class="achievement-card glow-card">
+          <div class="ach-head">
+            <div class="ach-icon">🏢</div>
+            <div class="ach-meta">
+              <h3>Oman Data Park (ODP)</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2025</div>
+        </article>
+
+        <article class="achievement-card glow-card highlight">
+          <div class="ach-head">
+            <div class="ach-icon">🤖</div>
+            <div class="ach-meta">
+              <h3>ORKI AI</h3>
+              <p>Certification of Completion</p>
+            </div>
+          </div>
+          <div class="ach-date">2025</div>
+        </article>
+
+        <article class="achievement-card glow-card highlight">
+          <div class="ach-head">
+            <div class="ach-icon">🏆</div>
+            <div class="ach-meta">
+              <h3>Icons Oman</h3>
+              <p>Digital Content Creator</p>
+            </div>
+          </div>
+          <div class="ach-date">2025</div>
+        </article>
+
+      </div>
     </div>
+  </section>
 
-    <div class="about-text">
-      <h2>About</h2>
-      <p>
-        I am a Computer Science student with a strong interest in artificial intelligence,
-        data-driven systems, and entrepreneurship.
-      </p>
-      <p>
-        I served as Head of the Sports Committee at the Omani Students Society in Cardiff,
-        leading initiatives that promote leadership, teamwork, and community engagement.
-      </p>
-      <p>
-        I am also a crypto enthusiast exploring blockchain technologies and decentralized systems.
-        I was awarded <strong>Icons Oman 2025</strong> for being a
-        <strong>Digital Content Creator</strong>.
-      </p>
+  <!-- CONTACT (FORM ADDED) -->
+  <section id="contact" class="section">
+    <div class="container narrow center">
+      <h2 class="section-title">Contact</h2>
+      <p class="muted">Have a question or want to work together? Let’s connect.</p>
+
+      <form class="contact-form glow-card"
+            action="https://formsubmit.co/muayadabduwani@gmail.com"
+            method="POST">
+        <!-- FormSubmit settings -->
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_subject" value="New message from muayad portfolio site" />
+        <!-- Optional: redirect after submit (edit if you want a thank-you page) -->
+        <!-- <input type="hidden" name="_next" value="https://dudi14x.github.io/dudiweb/#contact" /> -->
+
+        <div class="form-row">
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" placeholder="How can I help?" required></textarea>
+        </div>
+
+        <button type="submit" class="btn primary ripple">Send Message</button>
+
+        <div class="contact-links">
+          <a href="mailto:muayadabduwani@gmail.com">📧 muayadabduwani@gmail.com</a>
+          <span class="dot">•</span>
+          <span>📍 Oman</span>
+          <span class="dot">•</span>
+          <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
+             target="_blank" rel="noopener noreferrer">🔗 LinkedIn</a>
+        </div>
+      </form>
     </div>
+  </section>
 
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements" class="section">
-  <div class="container">
-    <h2 class="center">Achievements & Certifications</h2>
-
-    <div class="achievements-grid">
-
-      <div class="achievement-card">
-        <h3>IGCSE</h3>
-        <p>Certification of Completion</p>
-        <span>2019 – 2021</span>
-      </div>
-
-      <div class="achievement-card">
-        <h3>IB Diploma</h3>
-        <p>Certification of Completion</p>
-        <span>2021 – 2023</span>
-      </div>
-
-      <div class="achievement-card">
-        <h3>IELTS</h3>
-        <p>Certification of Completion</p>
-        <span>2023</span>
-      </div>
-
-      <div class="achievement-card">
-        <h3>Omantel</h3>
-        <p>Certification of Completion</p>
-        <span>2024</span>
-      </div>
-
-      <div class="achievement-card">
-        <h3>Oman Data Park (ODP)</h3>
-        <p>Certification of Completion</p>
-        <span>2025</span>
-      </div>
-
-      <div class="achievement-card highlight">
-        <h3>ORKI AI</h3>
-        <p>Certification of Completion</p>
-        <span>2025</span>
-      </div>
-
-      <div class="achievement-card highlight">
-        <h3>Icons Oman</h3>
-        <p>Digital Content Creator</p>
-        <span>2025</span>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- RESUME -->
-<section id="resume" class="section center">
-  <div class="container narrow">
-    <h2>Resume</h2>
-    <p class="muted">
-      Download my resume for full academic and professional details.
-    </p>
-    <a href="assets/resume.pdf" class="btn primary" download>
-      Download Resume
+  <footer class="footer">
+    © 2026 Muayad Al Abduwani ·
+    <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265" target="_blank" rel="noopener noreferrer">
+      LinkedIn
     </a>
-  </div>
-</section>
+  </footer>
 
-<!-- CONTACT -->
-<section id="contact" class="section center">
-  <div class="container narrow">
-    <h2>Contact</h2>
-
-    <form class="contact-form"
-          action="https://formsubmit.co/muayadabduwani@gmail.com"
-          method="POST">
-
-      <input type="hidden" name="_captcha" value="false">
-
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-
-      <button type="submit" class="btn primary">Send Message</button>
-    </form>
-  </div>
-</section>
-
-<footer>
-  © 2026 Muayad Al Abduwani ·
-  <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
-     target="_blank">LinkedIn</a>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
