@@ -150,28 +150,41 @@
       Have a question or want to work together? Let’s connect!
     </p>
 
-    <form class="contact-form"
-          action="https://formsubmit.co/muayadabduwani@gmail.com"
-          method="POST">
+<form class="contact-form" action="https://formsubmit.co/muayadabduwani@gmail.com" method="POST">
 
-      <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://dudi14x.github.io/dudiweb/#contact">
+  <input type="hidden" name="_captcha" value="false">
 
-      <div class="row">
-        <input type="text" name="name" placeholder="Your name" required>
-        <input type="email" name="email" placeholder="you@example.com" required>
-      </div>
+  <div class="row">
+    <input
+      type="text"
+      name="name"
+      placeholder="Your Name"
+      required
+    />
 
-      <textarea name="message" placeholder="How can I help?" required></textarea>
+    <input
+      type="email"
+      name="email"
+      placeholder="Your Email"
+      required
+      pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$"
+      title="Please include an '@' and a valid domain like '.com'"
+    />
+  </div>
 
-      <button type="submit" class="btn primary">Send Message</button>
+  <textarea
+    name="message"
+    placeholder="Your Message"
+    required
+  ></textarea>
 
-      <div class="contact-footer">
-        📍 Oman ·
-        <a href="mailto:muayadabduwani@gmail.com">muayadabduwani@gmail.com</a> ·
-        <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
-           target="_blank">LinkedIn</a>
-      </div>
-    </form>
+  <button type="submit" class="btn primary">
+    Send Message
+  </button>
+
+</form>
+
   </div>
 </section>
 
@@ -182,3 +195,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
