@@ -198,4 +198,28 @@ footer{
 .contact-form:hover::after{
   opacity:1;
 }
+.hero::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(167,139,250,.15), transparent 40%),
+    radial-gradient(circle at 70% 60%, rgba(109,40,217,.12), transparent 45%);
+  pointer-events:none;
+}
+
+.hero h1{
+  text-shadow:0 0 60px rgba(167,139,250,.25);
+}
+
+.hero .btn.primary{
+  animation:pulseGlow 3.5s infinite;
+}
+
+@keyframes pulseGlow{
+  0%,100%{box-shadow:0 0 35px rgba(167,139,250,.5)}
+  50%{box-shadow:0 0 60px rgba(167,139,250,.85)}
+}
+<input type="hidden" name="_next" value="https://dudi14x.github.io/dudiweb/#contact">
+
 
