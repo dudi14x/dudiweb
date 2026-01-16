@@ -3,37 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <title>Muayad Al Abduwani</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
+
 <body>
+  <!-- NAV -->
   <nav>
     <div class="logo">Muayad Al Abduwani <span>• Entrepreneur</span></div>
     <ul>
-      <li><a class="active" href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="achievements.html">Achievements</a></li>
-      <li><a href="resume.html">Resume</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
-    <div class="theme-toggle">🌙</div>
   </nav>
 
-  <main class="hero">
-    <div class="orbit"></div>
+  <!-- BACKGROUND FX -->
+  <canvas id="bg"></canvas>
 
-    <h1>
-      <span class="accent">Build.</span>
-      <span class="light">Evolve.</span>
-    </h1>
-
-    <p class="subtitle">
-      Start now — let’s connect and grow.
-    </p>
+  <!-- HOME -->
+  <section id="home" class="hero">
+    <h1><span>Build.</span> Evolve.</h1>
+    <p>Start now — let’s connect and grow.</p>
 
     <div class="buttons">
-      <a href="assets/resume.pdf" class="btn primary" download>View Resume</a>
-      <a href="contact.html" class="btn secondary">Contact Me</a>
+      <a href="assets/resume.pdf" download class="btn primary">View Resume</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
     </div>
 
     <div class="tags">
@@ -46,13 +43,59 @@
       <span>Python</span>
       <span>SQL</span>
     </div>
-  </main>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      I am a Computer Science student with a strong interest in artificial intelligence,
+      data-driven systems, and entrepreneurship.
+    </p>
+    <p>
+      I serve as Head of the Sports Committee at the Omani Students Society in Cardiff,
+      leading initiatives that promote leadership and collaboration.
+    </p>
+    <p>
+      I am also a crypto enthusiast exploring blockchain technologies and decentralized systems.
+    </p>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section grid">
+    <h2>Achievements</h2>
+    <div class="card">IGCSE Certificate</div>
+    <div class="card">IB Diploma</div>
+    <div class="card">IELTS Certificate</div>
+    <div class="card">Omantel – Certification of Completion</div>
+    <div class="card">Oman Data Park – Certification</div>
+    <div class="card">Oman Data Park – Certification (2)</div>
+    <div class="card">ORKI AI Certification</div>
+  </section>
+
+  <!-- RESUME -->
+  <section id="resume" class="section center">
+    <h2>Resume</h2>
+    <p>Download my resume for full academic and professional details.</p>
+    <a href="assets/resume.pdf" download class="btn primary">Download Resume</a>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section center">
+    <h2>Contact</h2>
+    <p>📍 Oman · 📧 muayadabduwani@gmail.com</p>
+
+    <!-- WORKING FORM -->
+    <form action="https://formspree.io/f/xwkgqgvy" method="POST" class="form">
+      <input type="text" name="name" placeholder="Your name" required />
+      <input type="email" name="email" placeholder="Your email" required />
+      <textarea name="message" placeholder="How can I help?" required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
 
   <footer>
-    <p>© 2026 Muayad Al Abduwani</p>
-    <div class="socials">
-      <span class="placeholder">LinkedIn</span>
-    </div>
+    © 2026 Muayad Al Abduwani · LinkedIn
   </footer>
 
   <script src="script.js"></script>
