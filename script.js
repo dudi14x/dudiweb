@@ -1,19 +1,30 @@
-const toggle = document.getElementById("themeToggle");
-const root = document.documentElement;
+document.addEventListener("DOMContentLoaded", () => {
+  const btn = document.getElementById("themeToggle");
+  if (!btn) return;
 
-// Load saved theme
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme) {
-  root.setAttribute("data-theme", savedTheme);
-  toggle.textContent = savedTheme === "dark" ? "🌙" : "☀️";
-}
+  const root = document.documentElement;
 
-// Toggle theme
-toggle.addEventListener("click", () => {
-  const current = root.getAttribute("data-theme");
-  const next = current === "dark" ? "light" : "dark";
+  const applyTheme = (theme) => {
+    root.setAttribute("data-theme", theme);
+    btn.textContent = theme === "light" ? "☀️" : "🌙";
+  };
 
-  root.setAttribute("data-theme", next);
-  localStorage.setItem("theme", next);
-  toggle.textContent = next === "dark" ? "🌙" : "☀️";
+  // 1) Load saved theme (if exists)
+  const saved = localStorage.getItem("theme");
+  if (saved === "light" || saved === "dark") {
+    applyTheme(saved);
+  } else {
+    // 2) Otherwise use system preference
+    const prefersLight = window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: light)").matches;
+    applyTheme(prefersLight ? "light" : "dark");
+  }
+
+  // Toggle
+  btn.addEventListener("click", () => {
+    const current = root.getAttribute("data-theme") || "dark";
+    const next = current === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", next);
+    applyTheme(next);
+  });
 });
