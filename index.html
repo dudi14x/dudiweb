@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Muayad Al Abduwani</title>
 
-  <!-- MUST MATCH FILE NAME EXACTLY -->
+  <!-- MAIN STYLES -->
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -14,17 +14,26 @@
 <!-- NAV -->
 <nav class="nav" id="home">
   <div class="nav-inner">
-    <div class="logo">Muayad Al Abduwani <span>• Entrepreneur</span></div>
+    <div class="logo">
+      Muayad Al Abduwani <span>• Entrepreneur</span>
+    </div>
+
     <ul class="nav-links">
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#achievements">Achievements</a></li>
       <li><a href="#contact">Contact</a></li>
       <li>
-        <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265"
-           target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265" target="_blank">
+          LinkedIn
+        </a>
       </li>
     </ul>
+
+    <!-- THEME TOGGLE -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+      🌙
+    </button>
   </div>
 </nav>
 
@@ -58,12 +67,11 @@
     <div>
       <h2>About</h2>
       <p>
-        I am a Computer Science student with a strong interest in artificial intelligence,
-        data-driven systems, and entrepreneurship.
+        Computer Science student with a strong interest in AI, data-driven systems,
+        entrepreneurship, and blockchain.
       </p>
       <p>
-        Head of the Sports Committee at the Omani Students Society in Cardiff,
-        promoting leadership and community engagement.
+        Former Head of Sports Committee at the Omani Students Society in Cardiff.
       </p>
       <p>
         Awarded <strong>Icons Oman 2025</strong> — Digital Content Creator.
@@ -82,14 +90,12 @@
       <div class="achievement-card">
         <div class="icon">🎓</div>
         <h3>IGCSE</h3>
-        <p>The Sultan’s School</p>
         <span>2019 – 2021</span>
       </div>
 
       <div class="achievement-card">
         <div class="icon">📘</div>
         <h3>IB Diploma</h3>
-        <p>The Sultan’s School</p>
         <span>2021 – 2023</span>
       </div>
 
@@ -99,53 +105,33 @@
         <span>2023</span>
       </div>
 
-      <!-- FULL CARD LINKS -->
-      <a class="achievement-card"
-         href="https://www.linkedin.com/company/omantel/"
-         target="_blank">
+      <a class="achievement-card" href="https://www.linkedin.com/company/omantel/" target="_blank">
         <div class="icon">📡</div>
         <h3>Omantel</h3>
-        <p>Big Data & Analytics<br>Consumer Unit</p>
         <span>2024</span>
       </a>
 
-      <a class="achievement-card"
-         href="https://www.linkedin.com/company/oman-data-park/"
-         target="_blank">
+      <a class="achievement-card" href="https://www.linkedin.com/company/oman-data-park/" target="_blank">
         <div class="icon">🏢</div>
         <h3>Oman Data Park</h3>
-        <p>Center of Excellence</p>
         <span>2025</span>
       </a>
 
-      <a class="achievement-card"
-         href="https://www.linkedin.com/company/oman-data-park/"
-         target="_blank">
-        <div class="icon">🏢</div>
-        <h3>Oman Data Park</h3>
-        <p>Governance, Risk & Compliance</p>
-        <span>2025</span>
-      </a>
-
-      <div class="achievement-card">
+      <a class="achievement-card" href="https://www.linkedin.com/company/orki-ai/" target="_blank">
         <div class="icon">🤖</div>
         <h3>ORKI AI</h3>
-        <p>Freelancer</p>
         <span>2025</span>
-      </div>
+      </a>
 
-      <div class="achievement-card">
+      <a class="achievement-card" href="https://www.linkedin.com/company/iconsoman/" target="_blank">
         <div class="icon">🏆</div>
         <h3>Icons Oman</h3>
         <span>2025</span>
-      </div>
+      </a>
 
-      <a class="achievement-card highlight"
-         href="https://www.linkedin.com/company/zain-omantel/"
-         target="_blank">
+      <a class="achievement-card" href="https://www.linkedin.com/company/zain-omantel/" target="_blank">
         <div class="icon">🌍</div>
         <h3>Zain Omantel International</h3>
-        <p>Software Engineer</p>
         <span>2025</span>
       </a>
 
@@ -159,24 +145,25 @@
     <h2 class="center">Contact</h2>
 
     <form class="contact-form"
-          action="https://formsubmit.co/muayadabduwani@gmail.com"
-          method="POST">
+      action="https://formsubmit.co/muayadabduwani@gmail.com"
+      method="POST">
 
       <input type="hidden" name="_captcha" value="false">
 
       <div class="row">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
       </div>
 
       <textarea name="message" placeholder="Your Message" required></textarea>
-
-      <button type="submit" class="btn primary">Send Message</button>
+      <button class="btn primary">Send Message</button>
     </form>
   </div>
 </section>
 
 <footer>© 2026 Muayad Al Abduwani</footer>
 
+<!-- SCRIPT -->
+<script src="script.js"></script>
 </body>
 </html>
