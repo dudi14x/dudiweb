@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* switch from light grey to a rich dark canvas */
-  background-color: #0e0e10;
+  /* Create a dark, watery gradient background instead of a flat color */
+  background: linear-gradient(180deg, #0d1333 0%, #0e0e10 100%);
   color: #e0e0e0;
   line-height: 1.6;
   scroll-behavior: smooth;
@@ -51,17 +51,17 @@ h1, h2, h3 {
 .eyebrow {
   text-transform: uppercase;
   font-size: 0.9rem;
-  color: #888;
+  color: #a3a9c7;
   margin-bottom: 0.5rem;
 }
 
 /* NAVIGATION */
 .nav {
-  background: #111;
-  /* subtler shadow on dark backgrounds */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  background: rgba(15, 18, 34, 0.8); /* semi‑transparent for glossy feel */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
   position: sticky;
   top: 0;
+  backdrop-filter: blur(6px); /* subtle blur for glass effect */
   z-index: 999;
 }
 
@@ -77,12 +77,12 @@ h1, h2, h3 {
 .logo {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #fca311; /* preserve orange for the primary brand colour */
+  color: #9F1FEF; /* neon purple brand colour */
 }
 
 .logo span {
   font-weight: normal;
-  color: #888;
+  color: #6c7a96;
 }
 
 .nav-links {
@@ -92,34 +92,41 @@ h1, h2, h3 {
 }
 
 .nav-links a {
-  color: #ccc;
+  color: #dcdcdc;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #fca311; /* orange hover accent */
+  color: #00C4FF; /* electric blue hover accent */
 }
 
 /* HERO */
 .hero {
   padding: 6rem 1rem 3rem;
-  background: #111;
+  background: rgba(15, 18, 34, 0.8);
   text-align: center;
+  backdrop-filter: blur(4px);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
   color: #e0e0e0;
+  line-height: 1.2;
 }
 
+/* Apply a gradient to the highlighted word to enhance the watery gloss */
 .hero h1 span {
-  color: #bb86fc; /* neon purple highlight */
+  background: linear-gradient(to right, #9F1FEF, #00C4FF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #aaa;
+  color: #a3a9c7;
   margin-bottom: 1.5rem;
 }
 
@@ -137,27 +144,32 @@ h1, h2, h3 {
   font-weight: bold;
   transition: background 0.3s ease, border 0.3s ease;
   cursor: pointer;
+  display: inline-block;
 }
 
+/* Primary button with glossy gradient */
 .btn.primary {
-  background-color: #bb86fc;
+  background: linear-gradient(135deg, #9F1FEF 0%, #00C4FF 100%);
   color: #0e0e10;
   border: none;
+  box-shadow: 0 4px 10px rgba(0, 196, 255, 0.3), 0 0 10px rgba(159, 31, 239, 0.3);
 }
 
 .btn.primary:hover {
-  background-color: #8c47c6;
+  background: linear-gradient(135deg, #00C4FF 0%, #9F1FEF 100%);
 }
 
+/* Outline button draws colour from the gradient but remains translucent */
 .btn.outline {
-  background-color: transparent;
-  border: 2px solid #bb86fc;
-  color: #bb86fc;
+  background: transparent;
+  border: 2px solid #9F1FEF;
+  color: #9F1FEF;
 }
 
 .btn.outline:hover {
-  background-color: #bb86fc;
-  color: #0e0e10;
+  background: rgba(159, 31, 239, 0.1);
+  border-color: #00C4FF;
+  color: #00C4FF;
 }
 
 .tags {
@@ -169,11 +181,12 @@ h1, h2, h3 {
 }
 
 .tags span {
-  background-color: #ffd700; /* bright yellow dust */
-  color: #0e0e10;
+  background-color: rgba(254, 204, 3, 0.15); /* translucent yellow for glossy effect */
+  color: #FECC03;
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
   font-size: 0.9rem;
+  border: 1px solid rgba(254, 204, 3, 0.4);
 }
 
 /* ABOUT */
@@ -182,13 +195,15 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
+  backdrop-filter: blur(4px);
 }
 
 .profile {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 4px solid #bb86fc;
+  border: 4px solid #9F1FEF;
+  box-shadow: 0 4px 12px rgba(159, 31, 239, 0.4);
 }
 
 .about-layout p {
@@ -204,10 +219,10 @@ h1, h2, h3 {
 }
 
 .achievement-card {
-  background-color: #1a1a1a;
+  background-color: rgba(19, 25, 47, 0.85);
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  box-shadow: 0 4px 20px rgba(0, 196, 255, 0.1), 0 0 15px rgba(159, 31, 239, 0.15);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
   color: #e0e0e0;
@@ -215,13 +230,13 @@ h1, h2, h3 {
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.8);
+  box-shadow: 0 8px 25px rgba(0, 196, 255, 0.2), 0 0 20px rgba(159, 31, 239, 0.2);
 }
 
 .achievement-card .icon {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
-  color: #bb86fc;
+  color: #9F1FEF;
 }
 
 .achievement-card h3 a {
@@ -230,11 +245,11 @@ h1, h2, h3 {
 }
 
 .achievement-card h3 a:hover {
-  color: #fca311;
+  color: #00C4FF;
 }
 
 .achievement-card .org {
-  color: #999;
+  color: #8993b6;
   font-size: 0.95rem;
   margin: 0.3rem 0;
 }
@@ -242,11 +257,11 @@ h1, h2, h3 {
 .achievement-card span {
   display: block;
   font-size: 0.85rem;
-  color: #666;
+  color: #6c7a96;
 }
 
 .highlight {
-  border: 2px solid #bb86fc;
+  border: 2px solid #9F1FEF;
 }
 
 /* CONTACT */
@@ -266,12 +281,12 @@ h1, h2, h3 {
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #444;
+  border: 1px solid #2e3654;
   border-radius: 5px;
   width: 100%;
   font-size: 1rem;
   resize: vertical;
-  background-color: #1a1a1a;
+  background-color: rgba(19, 25, 47, 0.7);
   color: #e0e0e0;
 }
 
@@ -282,8 +297,8 @@ h1, h2, h3 {
 
 /* FOOTER */
 footer {
-  background-color: #111;
-  color: #bbb;
+  background-color: #0d1333;
+  color: #8993b6;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
@@ -296,7 +311,6 @@ footer {
     flex-direction: row;
     align-items: flex-start;
   }
-
   .about-layout > div {
     flex: 1;
   }
