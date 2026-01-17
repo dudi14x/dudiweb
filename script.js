@@ -5,5 +5,5 @@ toggle.addEventListener("click", () => {
   body.classList.toggle("light");
   body.classList.toggle("dark");
 
-  toggle.textContent = body.classList.contains("light") ? "☀️" : "🌙";
+  toggle.textContent = body.classList.contains("dark") ? "🌙" : "☀️";
 });
