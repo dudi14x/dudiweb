@@ -1,218 +1,139 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Muayad Al Abduwani</title>
-
-  <!-- MUST be named exactly style.css and exist in the same folder as index.html -->
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
-<body>
-
+<body class="dark">
   <!-- NAV -->
-  <nav class="nav" id="home">
+  <nav class="nav">
     <div class="nav-inner">
-      <div class="logo">
-        Muayad Al Abduwani <span>• Entrepreneur</span>
-      </div>
+      <div class="logo">Muayad Al Abduwani <span>• Entrepreneur</span></div>
 
-      <ul class="nav-links" aria-label="Primary">
+      <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#achievements">Achievements</a></li>
         <li><a href="#contact">Contact</a></li>
         <li>
-          <a href="https://www.linkedin.com/in/muayad-al-abduwani-b182b7265" target="_blank" rel="noopener">
-            LinkedIn
-          </a>
+          <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">
+            🌙
+          </button>
         </li>
       </ul>
-
-      <!-- Theme Toggle -->
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle dark/light mode">
-        🌙
-      </button>
     </div>
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="container center">
-      <h1><span>Build.</span> Evolve.</h1>
-      <p class="subtitle">Start now — let’s connect and grow.</p>
+  <section id="home" class="hero">
+    <h1><span>Build.</span> Evolve.</h1>
+    <p>Start now — let’s connect and grow.</p>
 
-      <div class="buttons">
-        <a href="assets/resume.pdf" class="btn primary" download>View Resume</a>
-        <a href="#contact" class="btn outline">Contact Me</a>
-      </div>
+    <div class="hero-buttons">
+      <a href="assets/resume.pdf" class="btn primary" download>View Resume</a>
+      <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
 
-      <div class="tags" aria-label="Skills">
-        <span>Data Science</span>
-        <span>AI Engineer</span>
-        <span>Machine Learning</span>
-        <span>Power BI</span>
-        <span>Python</span>
-        <span>SQL</span>
-        <span>Canva</span>
-      </div>
+    <div class="tags">
+      <span>Data Science</span>
+      <span>AI Engineer</span>
+      <span>Machine Learning</span>
+      <span>Power BI</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>Canva</span>
     </div>
   </section>
 
   <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container narrow about-layout">
-      <img src="assets/profile.png" alt="Muayad Al Abduwani" class="profile" />
-      <div class="about-text">
-        <h2>About</h2>
-        <p>
-          I am a Computer Science student with a strong interest in artificial intelligence, data-driven systems,
-          and entrepreneurship.
-        </p>
-        <p>
-          I served as Head of the Sports Committee at the Omani Students Society in Cardiff, promoting leadership
-          and community engagement.
-        </p>
-        <p>
-          I am also a crypto enthusiast exploring blockchain. I was awarded <strong>Icons Oman 2025</strong> for being a
-          <strong>Digital Content Creator</strong>.
-        </p>
-      </div>
-    </div>
+  <section id="about" class="section narrow">
+    <h2>About</h2>
+    <p>Computer Science student with strong interest in AI, data-driven systems, entrepreneurship, and blockchain.</p>
+    <p>Former Head of Sports Committee at the Omani Students Society in Cardiff.</p>
+    <p>Awarded <strong>Icons Oman 2025</strong> — Digital Content Creator.</p>
   </section>
 
   <!-- ACHIEVEMENTS -->
   <section id="achievements" class="section">
-    <div class="container">
-      <h1 class="page-title center">Achievements & Certifications</h1>
+    <h2 class="center">Achievements & Certifications</h2>
 
-      <div class="achievements-grid">
+    <div class="achievements-grid">
 
-        <!-- IGCSE -->
-        <div class="achievement-card">
-          <div class="icon">🎓</div>
-          <h3>IGCSE</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">The Sultan’s School</p>
-          <span class="date">2019 – 2021</span>
-        </div>
+      <a class="card">
+        <div class="icon">🎓</div>
+        <h3>IGCSE</h3>
+        <p>2019 – 2021</p>
+      </a>
 
-        <!-- IB -->
-        <div class="achievement-card">
-          <div class="icon">📘</div>
-          <h3>IB Diploma</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">The Sultan’s School</p>
-          <span class="date">2021 – 2023</span>
-        </div>
+      <a class="card">
+        <div class="icon">📘</div>
+        <h3>IB Diploma</h3>
+        <p>2021 – 2023</p>
+      </a>
 
-        <!-- IELTS -->
-        <div class="achievement-card">
-          <div class="icon">📝</div>
-          <h3>IELTS</h3>
-          <p class="muted">Certification of Completion</p>
-          <span class="date">2023</span>
-        </div>
+      <a class="card">
+        <div class="icon">📝</div>
+        <h3>IELTS</h3>
+        <p>2023</p>
+      </a>
 
-        <!-- Omantel (clickable card) -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/omantel/"
-           target="_blank" rel="noopener">
-          <div class="icon">📡</div>
-          <h3>Omantel</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">Big Data & Analytics Unit</p>
-          <p class="org">Consumer Unit</p>
-          <span class="date">2024</span>
-        </a>
+      <a href="https://www.linkedin.com/company/omantel/" target="_blank" class="card">
+        <div class="icon">📡</div>
+        <h3>Omantel</h3>
+        <p>Big Data & Analytics<br/>Consumer Unit</p>
+        <span>2024</span>
+      </a>
 
-        <!-- ODP COE -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/oman-data-park/"
-           target="_blank" rel="noopener">
-          <div class="icon">🏢</div>
-          <h3>Oman Data Park</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">Center of Excellence</p>
-          <span class="date">2025</span>
-        </a>
+      <a href="https://www.linkedin.com/company/oman-data-park/" target="_blank" class="card">
+        <div class="icon">🏢</div>
+        <h3>Oman Data Park</h3>
+        <p>Center of Excellence</p>
+        <span>2025</span>
+      </a>
 
-        <!-- ODP GRC -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/oman-data-park/"
-           target="_blank" rel="noopener">
-          <div class="icon">🏢</div>
-          <h3>Oman Data Park</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">Governance, Risk & Compliance</p>
-          <span class="date">2025</span>
-        </a>
+      <a href="https://www.linkedin.com/company/orki-ai/" target="_blank" class="card">
+        <div class="icon">🤖</div>
+        <h3>ORKI AI</h3>
+        <p>Freelancer</p>
+        <span>2025</span>
+      </a>
 
-        <!-- ORKI AI (now clickable + aligned) -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/orki-ai/"
-           target="_blank" rel="noopener">
-          <div class="icon">🤖</div>
-          <h3>ORKI AI</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">Freelancer</p>
-          <span class="date">2025</span>
-        </a>
+      <a href="https://www.linkedin.com/company/iconsoman/" target="_blank" class="card">
+        <div class="icon">🏆</div>
+        <h3>Icons Oman</h3>
+        <p>Digital Content Creator</p>
+        <span>2025</span>
+      </a>
 
-        <!-- Icons Oman (now clickable + aligned) -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/iconsoman/"
-           target="_blank" rel="noopener">
-          <div class="icon">🏆</div>
-          <h3>Icons Oman</h3>
-          <p class="muted">Award / Recognition</p>
-          <p class="org">Digital Content Creator</p>
-          <span class="date">2025</span>
-        </a>
+      <a href="https://www.linkedin.com/company/zain-omantel/" target="_blank" class="card">
+        <div class="icon">🌍</div>
+        <h3>Zain Omantel International</h3>
+        <p>Software Engineer</p>
+        <span>2025</span>
+      </a>
 
-        <!-- Zain Omantel -->
-        <a class="achievement-card link-card"
-           href="https://www.linkedin.com/company/zain-omantel/"
-           target="_blank" rel="noopener">
-          <div class="icon">🌍</div>
-          <h3>Zain Omantel International</h3>
-          <p class="muted">Certification of Completion</p>
-          <p class="org">Software Engineer</p>
-          <span class="date">2025</span>
-        </a>
-
-      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section id="contact" class="section">
-    <div class="container narrow">
-      <h2 class="center">Contact</h2>
-      <p class="center muted">Have a question or want to work together? Let’s connect!</p>
+  <section id="contact" class="section narrow">
+    <h2 class="center">Contact</h2>
 
-      <form class="contact-form"
-            action="https://formsubmit.co/muayadabduwani@gmail.com"
-            method="POST">
-        <input type="hidden" name="_next" value="https://dudi14x.github.io/dudiweb/#contact" />
-        <input type="hidden" name="_captcha" value="false" />
-
-        <div class="row">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-        </div>
-
-        <textarea name="message" placeholder="Your Message" required></textarea>
-
-        <button type="submit" class="btn primary full">Send Message</button>
-      </form>
-    </div>
+    <form class="contact-form">
+      <div class="row">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+      </div>
+      <textarea placeholder="Your Message" required></textarea>
+      <button class="btn primary full">Send Message</button>
+    </form>
   </section>
 
   <footer>© 2026 Muayad Al Abduwani</footer>
 
-  <!-- MUST be named script.js and exist in the same folder as index.html -->
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
