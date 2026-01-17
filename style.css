@@ -7,8 +7,9 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #222;
+  /* switch from light grey to a rich dark canvas */
+  background-color: #0e0e10;
+  color: #e0e0e0;
   line-height: 1.6;
   scroll-behavior: smooth;
 }
@@ -56,8 +57,9 @@ h1, h2, h3 {
 
 /* NAVIGATION */
 .nav {
-  background: #ffffff;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  background: #111;
+  /* subtler shadow on dark backgrounds */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
   position: sticky;
   top: 0;
   z-index: 999;
@@ -75,11 +77,12 @@ h1, h2, h3 {
 .logo {
   font-size: 1.25rem;
   font-weight: bold;
+  color: #fca311; /* preserve orange for the primary brand colour */
 }
 
 .logo span {
   font-weight: normal;
-  color: #666;
+  color: #888;
 }
 
 .nav-links {
@@ -89,33 +92,34 @@ h1, h2, h3 {
 }
 
 .nav-links a {
-  color: #333;
+  color: #ccc;
   transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #4fb2e5;
+  color: #fca311; /* orange hover accent */
 }
 
 /* HERO */
 .hero {
   padding: 6rem 1rem 3rem;
-  background: #ffffff;
+  background: #111;
   text-align: center;
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
+  color: #e0e0e0;
 }
 
 .hero h1 span {
-  color: #4fb2e5;
+  color: #bb86fc; /* neon purple highlight */
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #555;
+  color: #aaa;
   margin-bottom: 1.5rem;
 }
 
@@ -136,24 +140,24 @@ h1, h2, h3 {
 }
 
 .btn.primary {
-  background-color: #4fb2e5;
-  color: white;
+  background-color: #bb86fc;
+  color: #0e0e10;
   border: none;
 }
 
 .btn.primary:hover {
-  background-color: #399bcf;
+  background-color: #8c47c6;
 }
 
 .btn.outline {
   background-color: transparent;
-  border: 2px solid #4fb2e5;
-  color: #4fb2e5;
+  border: 2px solid #bb86fc;
+  color: #bb86fc;
 }
 
 .btn.outline:hover {
-  background-color: #4fb2e5;
-  color: white;
+  background-color: #bb86fc;
+  color: #0e0e10;
 }
 
 .tags {
@@ -165,8 +169,8 @@ h1, h2, h3 {
 }
 
 .tags span {
-  background-color: #eaf7fd;
-  color: #4fb2e5;
+  background-color: #ffd700; /* bright yellow dust */
+  color: #0e0e10;
   padding: 0.3rem 0.75rem;
   border-radius: 20px;
   font-size: 0.9rem;
@@ -184,7 +188,7 @@ h1, h2, h3 {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 4px solid #4fb2e5;
+  border: 4px solid #bb86fc;
 }
 
 .about-layout p {
@@ -200,36 +204,37 @@ h1, h2, h3 {
 }
 
 .achievement-card {
-  background-color: white;
+  background-color: #1a1a1a;
   border-radius: 10px;
   padding: 1.5rem;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
+  color: #e0e0e0;
 }
 
 .achievement-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.8);
 }
 
 .achievement-card .icon {
   font-size: 2.5rem;
   margin-bottom: 0.75rem;
-  color: #4fb2e5;
+  color: #bb86fc;
 }
 
 .achievement-card h3 a {
-  color: #222;
+  color: #e0e0e0;
   text-decoration: none;
 }
 
 .achievement-card h3 a:hover {
-  color: #4fb2e5;
+  color: #fca311;
 }
 
 .achievement-card .org {
-  color: #777;
+  color: #999;
   font-size: 0.95rem;
   margin: 0.3rem 0;
 }
@@ -237,11 +242,11 @@ h1, h2, h3 {
 .achievement-card span {
   display: block;
   font-size: 0.85rem;
-  color: #999;
+  color: #666;
 }
 
 .highlight {
-  border: 2px solid #4fb2e5;
+  border: 2px solid #bb86fc;
 }
 
 /* CONTACT */
@@ -261,11 +266,13 @@ h1, h2, h3 {
 .contact-form input,
 .contact-form textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #444;
   border-radius: 5px;
   width: 100%;
   font-size: 1rem;
   resize: vertical;
+  background-color: #1a1a1a;
+  color: #e0e0e0;
 }
 
 .contact-form button {
@@ -275,8 +282,8 @@ h1, h2, h3 {
 
 /* FOOTER */
 footer {
-  background-color: #f1f1f1;
-  color: #555;
+  background-color: #111;
+  color: #bbb;
   text-align: center;
   padding: 1rem;
   font-size: 0.9rem;
